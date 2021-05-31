@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frank Winston Crum Insurance</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="css/index.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="logo">
+        <a href="index.html"
+          ><img src="images/logo.svg" alt="Frank-Crum Logo"
+        /></a>
+        <p>Agent <br />Resources</p>
+      </div>
+      <div class="menu">
+        <div class="links">
+          <a href="index.html">Resource Home</a>
+          <a href="policy.html">Policy Servicing & Management Docs &#9662; </a>
+          <a href="products.html">Products & Programs</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+      </div>
+    </nav>
+    <!-- Header-->
+    <header>
+      <div class="header-title">
+        <p>Resource Home</p>
+      </div>
+    </header>
+
+    <!-- Search bar -->
+    <div class="search-view">
+      <div class="input">
+        <input type="text" placeholder="Search Resource Home" />
+        <button class="search-button" href="#">Search</button>
+      </div>
+      <!-- Grid and List View options -->
+      <div class="views">
+        <img src="images/grid-view.png" />
+        <p>Grid View</p>
+        <img src="images/list-view.png"">
+        <p>List View</p>
+      </div>
+    </div>
+
+    <!-- Filters -->
+    <div class="filters">
+      <p>Filter Available Documents</p>
+    </div>
+
+    <div class="filter-buttons">
+      <div class="dropdown">
+        <button onclick="dropFunc()" class="dropbtn">
+          List of Business (0)
+          <span>&#9660;</span>
+        </button>
+
+        <div id="myDropdown" class="dropdown-content">
+          <a href="#">No options</a>
+          <a href="#">option1</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <button onclick="dropFuncTwo()" class="dropbtn">
+          Company (0) <span>&#9660;</span>
+        </button>
+        <div id="myDropdownTwo" class="dropdown-content">
+          <a href="#">No options</a>
+          <a href="#">option2</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button onclick="dropFuncThree()" class="dropbtn">
+          States (0) <span>&#9660;</span>
+        </button>
+        <div id="myDropdownThree" class="dropdown-content">
+          <a href="#">No options</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button onclick="dropFuncFour()" class="dropbtn">
+          Type of Document (0) <span>&#9660;</span>
+        </button>
+        <div id="myDropdownFour" class="dropdown-content">
+          <a href="#">No options</a>
+        </div>
+      </div>
+      <button class="reset-btn" onclick="reset()">Reset filter</button>
+    </div>
+
+    <script>
+      /* When the user clicks on the button,toggle between hiding and showing the dropdown content */
+      function dropFunc() {
+        document.getElementById('myDropdown').classList.toggle('show')
+      }
+      function dropFuncTwo() {
+        document.getElementById('myDropdownTwo').classList.toggle('show')
+      }
+      function dropFuncThree() {
+        document.getElementById('myDropdownThree').classList.toggle('show')
+      }
+      function dropFuncFour() {
+        document.getElementById('myDropdownFour').classList.toggle('show')
+      }
+      function reset() {
+        document.getElementById(
+          'myDropdown',
+          'myDropdownTwo',
+          'myDropdownThree',
+          'myDropdownFour'
+        ).selectedIndex = 0
+      }
+    </script>
+
+    <!-- Main sections/  Popular Resources -->
+    <main class="main">
+      <p>Popular Resources</p>
+      <hr />
+      <section class="row-one">
+        <div class="row-one-images">
+          <img src="images/pic1.row1.svg" />
+          <input class="preview" type="button" value="Preview" />
+          <input class="download" type="button" value="Direct Download" />
+          <div class="row-one-description">
+            <p>
+              Endorsement Request - <br />
+              General Liability
+            </p>
+          </div>
+        </div>
+
+        <div class="row-one-images">
+          <img src="images/pic2.row1.svg" />
+          <input class="preview" type="button" value="Preview" />
+          <input class="download" type="button" value="Direct Download" />
+          <div class="row-one-description">
+            <p>
+              Apetite Guide - <br />
+              Extended Resource Guide
+            </p>
+          </div>
+        </div>
+
+        <div class="row-one-images">
+          <img src="images/pic3.row1.svg" />
+          <input class="preview" type="button" value="Preview" />
+          <input class="download" type="button" value="Direct Download" />
+          <div class="row-one-description">
+            <p>
+              Frank Winston Crum - <br />
+              Florida WC Target List
+            </p>
+          </div>
+        </div>
+
+        <div class="row-one-images">
+          <img src="images/pic4.row1.svg" />
+          <input class="preview" type="button" value="Preview" />
+          <input class="download" type="button" value="Direct Download" />
+          <div class="row-one-description">
+            <p>
+              Frank Winston Crum - <br />
+              Inland Marine Options
+            </p>
+          </div>
+        </div>
+
+        <div class="row-one-images">
+          <img src="images/pic5.row1.svg" />
+          <input class="preview" type="button" value="Preview" />
+          <input class="download" type="button" value="Direct Download" />
+          <div class="row-one-description">
+            <p>
+              FWCI Roofing <br />
+              Supplemental Application 11/2020
+            </p>
+          </div>
+        </div>
+
+        <div class="row-one-images">
+          <img src="images/pic6.row1.svg" />
+          <input class="preview" type="button" value="Preview" />
+          <input class="download" type="button" value="Direct Download" />
+          <div class="row-one-description">
+            <p>
+              Florida GL Manual - <br />
+              Clear Blue
+            </p>
+          </div>
+        </div>
+      </section>
+      <p>New & Updated Resource</p>
+      <hr />
+      <section class="row-two">
+        <div class="row-two-images">
+          <img src="images/pic1.row2.svg" />
+          <input class="preview" type="button" value="Preview" />
+          <input class="download" type="button" value="Direct Download" />
+          <div class="row-two-description">
+            <p>
+              Agent - Broker of<br />
+              Record Change - Acord 36 01-07
+            </p>
+          </div>
+        </div>
+
+        <div class="row-two-images">
+          <img src="images/pic2.row2.svg" />
+          <input class="preview" type="button" value="Preview" />
+          <input class="download" type="button" value="Direct Download" />
+          <div class="row-two-description">
+            <p>
+              Agent - Broker of<br />
+              Record Change - Acord 36 01-07
+            </p>
+          </div>
+        </div>
+
+        <div class="row-two-images">
+          <img src="images/pic3.row2.svg" />
+          <input class="preview" type="button" value="Preview" />
+          <input class="download" type="button" value="Direct Download" />
+          <div class="row-two-description">
+            <p>
+              Agent - Broker of<br />
+              Record Change - Acord 36 01-07
+            </p>
+          </div>
+        </div>
+
+        <div class="row-two-images">
+          <img src="images/pic4.row2.svg" />
+          <input class="preview" type="button" value="Preview" />
+          <input class="download" type="button" value="Direct Download" />
+          <div class="row-two-description">
+            <p>
+              Agent - Broker of<br />
+              Record Change - Acord 36 01-07
+            </p>
+          </div>
+        </div>
+
+        <div class="row-two-images">
+          <img src="images/pic5.row2.svg" />
+          <input class="preview" type="button" value="Preview" />
+          <input class="download" type="button" value="Direct Download" />
+          <div class="row-two-description">
+            <p>
+              Agent - Broker of<br />
+              Record Change - Acord 36 01-07
+            </p>
+          </div>
+        </div>
+
+        <div class="row-two-images">
+          <img src="images/pic6.row2.svg" />
+          <input class="preview" type="button" value="Preview" />
+          <input class="download" type="button" value="Direct Download" />
+          <div class="row-two-description">
+            <p>
+              Agent - Broker of<br />
+              Record Change - Acord 36 01-07
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+      <p>
+        &copy;2021 <a href="https://www.frankcrum.com/">FrankWinstonCrum</a>
+      </p>
+    </footer>
+  </body>
+</html>
